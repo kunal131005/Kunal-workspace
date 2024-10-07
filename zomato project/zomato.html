@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZOMATO-WEBPAGE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body{
+    justify-content: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    
+}
+.hd1{
+    display: flex;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow:  0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+    margin-left: 30px;
+}
+.himg1{
+    height: 40px;
+    width: 180px;
+    padding-top: 17px;
+}
+.hs1{
+    width: 140px;
+    height: 50px;
+    border:none;
+}
+.hi1{
+    width: 400px;
+    height: 50px;
+    border: none;
+}
+.hd2{
+    display: flex;
+}
+.himg2{
+    width:30px;
+    height: 30px;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.hd3{
+    margin-left: 200px;
+    margin-top: 30px;
+}
+.hs2{
+    border: none;
+    width: 60px;
+}
+.a1{
+    text-decoration: none;
+    color: rgb(130, 130, 130);
+}
+.main{
+    margin-top: 40px;
+    margin-left: 10px;
+}
+.md2{
+    margin-top: 20px;
+}
+.b1{
+    border: 1px solid rgb(207, 207, 207);
+    color: rgb(156, 156, 156);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(54, 54, 54, 0.06) 0px 1px 2px;
+    border-radius: 0.5rem;
+    width: 70px;
+    height: 20px;
+}
+.main1{
+    background: rgb(248, 248, 248);
+    width: 100%;
+
+}
+.main1 h3{
+   padding-top: 20px;
+}
+.md3 img{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+
+}
+.md3{
+    display: flex;
+
+}
+.md3 p{
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+.f1{
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow:  0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    height: 280px;
+}
+.f1 img{
+    width: 200px;
+    height: 110px;
+}
+.f1 div{
+    display: flex;
+    justify-content: space-between;
+}
+.f1 button{
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 70px;
+    color: white;
+    margin-top: 10px;
+}
+.f1 p{
+    font-size: smaller;
+    color: rgb(130, 130, 130);
+
+}
+.md4{
+    display: flex;
+    justify-content: space-around;
+}
+.main3{
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+.main3 img{
+    width: 100px;
+    margin-left: 50px;
+}
+.main4{
+    background-color: rgb(244, 240, 240);
+    width: 100%;
+    height: 400px;
+}
+.main4 h1{
+    font-weight: 100;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.ms1{
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow:  0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 95%;
+    margin-left: 28px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 20px;
+    padding: 10px;
+}
+footer{
+    background-color:  rgb(235, 228, 228);
+}
+.fd1{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.himg3{
+        height: 40px;
+        width: 150px;
+        padding-left: 100px;
+}
+.fd1 button{
+    position: relative;
+    right: 100px;
+    top: 10px;
+    background-color:  rgb(235, 228, 228);
+    border: 1px solid  rgb(130, 130, 130);
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+
+}
+.fd2{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+}
+.fd2 a{
+   text-decoration: none;
+   color: rgb(130, 130, 130);
+}
+.df1{
+    width: 90px;
+}
+.df2{
+    width: 100px;
+}
+.df3{
+    width: 150px;
+}
+.df4{
+    width: 100px;
+}
+    </style>
+   
+</head>
+
+<body>
+    <header>
+        <img src="zomato logo.avif" alt="logo" class="himg1">
+        <div class="hd1">
+            <div class="hh">
+                <img src="location.avif" alt="" class="himg2">
+            </div>
+            <select class="hs1">
+                <option value="">Enter your Location</option>
+
+            </select>
+            <div class="hd2">
+                <div class="hh">
+                    <img src="search.png" alt="logo1" class="himg2">
+                </div>
+                <input type="search" class="hi1" placeholder="Search for retaurent,cuisine or a dish">
+            </div>
+
+        </div>
+        <div class="hd3">
+            <select class="hs2">
+                <option value="">Profile</option>
+                <option value="">Notifications</option>
+                <option value="">Bookmarks</option>
+                <option value="">Reviews</option>
+                <option value="">Network</option>
+                <option value="">Find Friends</option>
+                <option value="">Settings</option>
+                <option value="">Log </option>
+            </select>
+        </div>
+    </header>
+    <div class="main">
+        <div class="md1">
+            <a href="#" class="a1">Home</a>
+            <a href="#" class="a1">/ Location</a>
+        </div>
+        <div class="md2">
+            <button class="b1">Filter</button>
+            <button class="b1">Pure Veg</button>
+            <button class="b1">Cuisine</button>
+
+        </div>
+
+    </div>
+    <div class="main1">
+        <h3>
+            Inspiration for your first order
+        </h3>
+        <div class="md3">
+            <div>
+                <img src="biryani.png" alt="logo1">
+                <p>Biryani</p>
+            </div>
+            <div>
+                <img src="pizza.avif" alt="">
+                <p>Pizza</p>
+            </div>
+            <div>
+                <img src="thali.avif" alt="">
+                <p>Thali</p>
+            </div>
+            <div>
+                <img src="chick.avif" alt="">
+                <p>Chicken</p>
+            </div>
+            <div>
+                <img src="burger.avif" alt="">
+                <p>Burger</p>
+            </div>
+            <div>
+                <img src="paneer.avif" alt="">
+                <p>Paneer</p>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div class="main2">
+        <h3>Order food online in Sant Shri Asharamji Gurukul,Chhindwara</h3>
+        <div class="md4">
+            <div class="f1">
+                <img src="roof 5.avif" alt="">
+                <div>
+                    <h4>Roof 5</h4>
+                    <button>3.7 ⭐</button>
+                </div>
+                <div>
+                    <p>North Indian,Pizza,...</p>
+                    <p>250 for one</p>
+                </div>
+                <p>39min </p>
+            </div>
+            <div class="f1">
+                <img src="my fitness meals.avif" alt="">
+                <div>
+                    <h4>My Fitness Meals</h4>
+                    <button>4.9 ⭐</button>
+                </div>
+                <div>
+                    <p>Healthy Food,Meals,...</p>
+                    <p>199 for one</p>
+                </div>
+                <p>16min </p>
+            </div>
+            <div class="f1">
+                <img src="grilled paneer.avif" alt="">
+                <div>
+                    <h4>Pakoda's</h4>
+                    <button>4.3 ⭐</button>
+                </div>
+                <div>
+                    <p>Samosa,Pakoda,...</p>
+                    <p>99 for one</p>
+                </div>
+                <p>10min </p>
+            </div>
+        </div>
+    </div>
+    <div class="main3">
+        <h1>End of search results</h1>
+        <img src="home.avif" alt="">
+    </div>
+    <div class="main4">
+        <h1>Explore options near me</h1>
+        <div>
+            <select class="ms1">
+                <option value="">Popular Cuisines Near Me</option>
+                <option value="">Beverages Near Me</option>
+                <option value="">Birayani Near Me</option>
+                <option value="">Burger Near Me</option>
+                <option value="">Chinese Near Me</option>
+                <option value="">Chicken Near Me</option>
+                <option value="">Coffee Near Me</option>
+                <option value="">Dessert Near Me</option>
+                <option value="">Ice Cream Near Me</option>
+                <option value="">Mithai Near Me</option>
+                <option value="">Momos Near Me</option>
+                <option value="">Mughlai Near Me</option>
+                <option value="">North Indian Near Me</option>
+                <option value="">Pizza Near Me</option>
+                <option value="">Pasta Near Me</option>
+                <option value="">Paneer Near Me</option>
+                <option value="">Soup Near Me</option>
+                <option value="">Shake Near Me</option>
+                <option value="">South Indian Near Me</option>
+                <option value="">Tea Near Me</option>
+            </select>
+        </div>
+        <div>
+            <select class="ms1">
+                <option value="">Popular Restaurant Types Near me</option>
+                <option value="">Bakeries Near Me</option>
+                <option value="">Beverages Near Me</option>
+                <option value="">Bars Near Me</option>
+                <option value="">Cafes Near Me</option>
+                <option value="">Casual Dinning Near Me</option>
+                <option value="">Dessert Parlour Near Me</option>
+                <option value="">Food Truck Near Me</option>
+                <option value="">Sweet Shop Near Me</option>
+            </select>
+        </div>
+        <div>
+            <select class="ms1">
+                <option value="">Cities We Deliver To</option>
+                <option value="">Delhi NCR</option>
+                <option value="">Bangalore</option>
+                <option value="">Mumbai</option>
+                <option value="">Kolkata</option>
+                <option value="">Chandigarh</option>
+                <option value="">Jaipur</option>
+                <option value="">Lucknow</option>
+                <option value="">Ahemdabad</option>
+                <option value="">Chennai</option>
+                <option value="">Jammu and Kashmir</option>
+            </select>
+        </div>
+    </div>
+    <footer>
+        <div class="fd1">
+            <img src="zomato logo.avif" alt="logo" class="himg3">
+            <div>
+                <button >&#127470;&#127475;
+                    India</button>
+                <button>🌐 English</button>
+            </div>
+        </div>
+        <div class="fd2">
+            <div class="df1">
+                <h4>About Zomato</h4>
+                <a href="#">About Us</a>
+                <a href="#">Blog Here</a>
+                <a href="#">Work With</a>
+                <a href="#">Investor Rel</a>
+                <a href="#">Report </a>
+                <a href="#">Press Kit</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="df2">
+                <h4>Zomaverse</h4>
+                <a href="#">Zomato</a>
+                <a href="#">Blinkit</a>
+                <a href="#">Feeding India</a>
+                <a href="#">Hyperpure</a>
+                <a href="#">Zomato Live</a>
+                <a href="#">Zomaland</a>
+                <a href="#">Weather Union</a>
+            </div>
+            <div class="df3">
+                <h4>For Restaurants</h4>
+                <a href="#">Partner With Us</a>
+                <a href="#">Apps for You</a>
+            </div>
+
+            <div class="df4">
+                <h4>Learn More</h4>
+                <a href="#">Privacy</a>
+                <a href="#">Security</a>
+                <a href="#">Terms</a>
+                <a href="#">Sitemap</a>
+            </div>
+            <div class="social-links">
+                <h4>Social links</h4>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+       
+    </footer>
+    
+
+
+</body>
+
+</html>
